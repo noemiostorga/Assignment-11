@@ -161,7 +161,7 @@
 					<a href="#">Relevancy</a>	
 				</div>
 
-			<div class="catAdContainer">
+			<div id="catAdContainer"> <!--start of all ad img-->
 			
 				<div class="catAd">
 					<img src="http://placehold.it/240x200" />
@@ -308,93 +308,39 @@
 
 	</section>
 
-	<section class="links box">
-
-		<div class="box">
-			<p>Turn your passion into a business</p>
-			<button>Open a Shop</button>
-			<a href="#">Seller Handbook</a>
-			<a href="#">Etsy credit card reader</a>
-		</div>
-
-
-		<div class="box">
-			<p> Join the community</p>
-			<a href="#">Teams</a>
-			<a href="#">Forums</a>
-			<a href="#">Upcoming events</a>
-			<a href="#">Affiliates</a>
-		</div>
-
-		<div class="box">
-			<p> Discover and shop</p>
-			<a href="#">Gift cards</a>
-			<a href="#">Blog</a>
-			<a href="#">Tastemakers</a>
-			<a href="#">Mobile apps</a>
-			<a href="#">Gift registeries</a>
-			<a href="#">Wholesale</a>
-			<a href="#">Manufacturing</a>
-			<a href="#">Search</a>
-			<a href="#">Etsy Finds</a>
-		</div>
-
-		<div class="box">
-			<p> Get to know us</p>
-			<a href="#">About</a>
-			<a href="#">Policies</a>
-			<a href="#">Careers</a>
-			<a href="#">Press</a>
-			<a href="#">Developers</a>
-			<a href="#">Investors</a>
-		</div>
-
-		<div class="box">
-			<p> Follow Etsy</p>
-			<a href="#">Facebook</a>
-			<a href="#">Twitter</a>
-			<a href="#">Pinterest</a>
-			<a href="#">Instagram</a>
-		</div>
+	
+	
 
 
 
 
 
-
-	</section>
-
-
-	<footer>
-
-		<button class="USBtn">United States</button>
-		<button>English (US)</button>
-		<button>$ USD</button>
-
-		<button class="helpBtn">Help</button>
-
-		<p>&copy; 2015 Etsy, Inc.</p>
-		<a href="#">Legal</a>
-		<a href="#">Privacy</a>
-		<a href="#">Internet-based ads</a>
-
-
-	</footer>
-
-
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
-<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="data.js"></script>
+<script src="main.js"></script>
 
-<script type="text/template">
-{{#count}}
 
-{{/count}}
 
-</script>
-<script id="etsyImg"></script>
+
+<script type="x-tmpl-mustache" id="listcatImg">
+	 			
+	 			{{#mapData}}
+					{{title}}
+	 				{{price}}
+	 				{{shop_name}}
+	 				{{currency_code}}
+	 				{{url_170x135}}
+	 				{{url}}
+	 			{{/mapData}}
+	 	
+				
+
+
+
+	 			
+ 		</script>
+
 
 
 </body>
